@@ -1,0 +1,40 @@
+{
+  "name": "obs-switcher",
+  "version": "0.0.0",
+  "description": "",
+  "homepage": "",
+  "author": {
+    "name": "na2na-p",
+    "email": "na2na@na2na.dev",
+    "url": ""
+  },
+  "files": [
+    "dashboard",
+		"dashboard/assets",
+    "graphics",
+    "extension.js",
+    "extension"
+  ],
+  "keywords": [
+    "",
+    "nodecg-bundle"
+  ],
+  "nodecg": {
+    "compatibleRange": "2.2.5",
+    "dashboardPanels": [
+      {
+        "name": "obs-switcher",
+        "title": "OBS Switcher",
+        "file": "index.html",
+        "width": 5,
+        "workspace": "OBS",
+        "headerColor": "#525F78"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "cd ./src/dashboard && pnpm build",
+    "dev": "cd ./src/dashboard && pnpm build:watch"
+  },
+  "license": "Apache-2.0"
+}

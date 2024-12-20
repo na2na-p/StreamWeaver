@@ -1,0 +1,24 @@
+{
+  "extends": "@tsconfig/strictest/tsconfig.json",
+  "compilerOptions": {
+    "types": [
+      "node",
+      "vitest/importMeta",
+      "vitest/globals",
+    ],
+		"baseUrl": ".",
+		"paths": {
+			"@/*": [
+				"src/*"
+			],
+			"@root/*": [
+				"*"
+			]
+		}
+	},
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}
