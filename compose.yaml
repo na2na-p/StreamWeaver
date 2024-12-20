@@ -1,0 +1,14 @@
+services:
+  nodecg:
+    image: ghcr.io/nodecg/nodecg:2.2.5
+    ports:
+      - '9090:9090'
+    volumes:
+      - 'logs:/opt/nodecg/logs'
+      - 'db:/opt/nodecg/db'
+      - 'assets:/opt/nodecg/assets'
+      - './bundles:/opt/nodecg/bundles'
+volumes:
+  logs:
+  db:
+  assets:
